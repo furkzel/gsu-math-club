@@ -5,7 +5,7 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    basePath: '',
+    basePath: '/gsu-math-club',
     trailingSlash: true,
     experimental: {
         optimizePackageImports: ['lucide-react'],
