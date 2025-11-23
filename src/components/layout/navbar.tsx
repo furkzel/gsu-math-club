@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -68,8 +69,24 @@ export function Navbar() {
             <Container>
                 <div className="flex h-16 items-center justify-between">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center space-x-2">
-                        <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    <Link href="/" className="flex items-center gap-3">
+                        <div className="flex items-center gap-2">
+                            <Image
+                                src="/images/logos/gsu.png"
+                                alt="GSU Logo"
+                                width={40}
+                                height={40}
+                                className="object-contain"
+                            />
+                            <Image
+                                src="/images/logos/gsumathsoc.png"
+                                alt="GSU Math Society Logo"
+                                width={40}
+                                height={40}
+                                className="object-contain"
+                            />
+                        </div>
+                        <span className="text-xl font-bold bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
                             GSU Matematik
                         </span>
                     </Link>

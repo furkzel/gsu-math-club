@@ -37,9 +37,9 @@ export default function HomePage() {
             <section className="py-20 bg-muted/20">
                 <Container>
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                        <Card className="border-none shadow-lg">
+                        <Card className="border-none shadow-lg hover:shadow-xl transition-all">
                             <CardContent className="flex flex-col items-center justify-center p-8 text-center">
-                                <Users className="h-10 w-10 text-primary mb-3" />
+                                <Users className="h-10 w-10 text-accent mb-3" />
                                 <p className="text-4xl font-bold mb-1">{COMMUNITY_STATS.activeMembers}+</p>
                                 <p className="text-sm text-muted-foreground font-medium">Aktif Üye</p>
                             </CardContent>
@@ -91,8 +91,9 @@ export default function HomePage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-24 bg-gradient-to-br from-primary via-primary to-secondary text-primary-foreground">
-                <Container>
+            <section className="py-24 bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground relative overflow-hidden">
+                <div className="absolute inset-0 bg-black/10" />
+                <Container className="relative z-10">
                     <div className="text-center max-w-3xl mx-auto">
                         <h2 className="text-4xl md:text-5xl font-bold mb-6">
                             Topluluğumuza Katıl
@@ -101,10 +102,10 @@ export default function HomePage() {
                             Matematik yolculuğunuzu desteklemek için buradayız. Birlikte öğrenelim, gelişelim.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button size="lg" variant="secondary" asChild className="shadow-lg">
+                            <Button size="lg" variant="secondary" asChild className="shadow-xl hover:scale-105 transition-transform">
                                 <Link href="/about">Hakkımızda</Link>
                             </Button>
-                            <Button size="lg" variant="outline" asChild className="bg-transparent border-2 hover:bg-white/10 shadow-lg">
+                            <Button size="lg" variant="outline" asChild className="bg-white/10 backdrop-blur border-2 border-white/50 hover:bg-white/20 shadow-xl hover:scale-105 transition-transform">
                                 <Link href="/contact">İletişim</Link>
                             </Button>
                         </div>

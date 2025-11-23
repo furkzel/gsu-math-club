@@ -18,8 +18,9 @@
         --secondary-foreground: 0 0% 98%;
         --muted: 210 40% 96.1%;
         --muted-foreground: 215.4 16.3% 46.9%;
-        --accent: 334 54% 23%;
-        --accent-foreground: 0 0% 98%;
+        --accent: 45 100% 51%;
+        /* #FFC700 Yellow Gold */
+        --accent-foreground: 0 0% 10%;
         --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 0 0% 98%;
         --border: 214.3 31.8% 91.4%;
@@ -47,8 +48,9 @@
         --muted: 210 7% 20%;
         --muted-foreground: 210 10% 70%;
         /* #ADB5BD Gray */
-        --accent: 334 54% 23%;
-        --accent-foreground: 0 0% 98%;
+        --accent: 45 100% 51%;
+        /* #FFC700 Yellow Gold */
+        --accent-foreground: 0 0% 10%;
         --destructive: 0 62.8% 30.6%;
         --destructive-foreground: 0 0% 98%;
         --border: 210 7% 25%;
