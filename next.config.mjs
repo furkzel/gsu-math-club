@@ -5,8 +5,8 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    basePath: '/gsu-math-club',
-    assetPrefix: '/gsu-math-club',
+    basePath: process.env.NODE_ENV === 'production' ? '/gsu-math-club' : '',
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/gsu-math-club' : '',
     trailingSlash: true,
     experimental: {
         optimizePackageImports: ['lucide-react'],
