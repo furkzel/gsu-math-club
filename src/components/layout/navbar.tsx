@@ -9,7 +9,7 @@ export function Navbar() {
       <nav className="container mx-auto flex items-center justify-between py-4">
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo.png"
+            src="public/images/logos/gsumathsoc.png"
             alt="GSU Math Club logo"
             width={48}
             height={48}
