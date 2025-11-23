@@ -136,26 +136,18 @@ export default function ContactPage() {
 
                     {/* Map & Social Media */}
                     <div className="space-y-8">
-                        {/* Logos */}
+                        {/* Logo */}
                         <Card className="border-2">
                             <CardHeader>
                                 <CardTitle>Kurumsal Kimlik</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <div className="flex items-center justify-around p-6 bg-muted/30 rounded-lg">
-                                    <Image
-                                        src="/images/logos/gsu.png"
-                                        alt="Galatasaray Üniversitesi"
-                                        width={120}
-                                        height={120}
-                                        className="object-contain"
-                                    />
-                                    <div className="h-20 w-px bg-border" />
+                                <div className="flex items-center justify-center p-8 bg-muted/30 rounded-lg">
                                     <Image
                                         src="/images/logos/gsumathsoc.png"
                                         alt="GSU Matematik Topluluğu"
-                                        width={120}
-                                        height={120}
+                                        width={150}
+                                        height={150}
                                         className="object-contain"
                                     />
                                 </div>
