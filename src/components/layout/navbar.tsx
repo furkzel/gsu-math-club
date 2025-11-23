@@ -69,8 +69,8 @@ export function Navbar() {
                 <div className="flex h-16 items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center space-x-2">
-                        <span className="text-xl font-bold text-primary">
-                            GSU Math
+                        <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                            GSU Matematik
                         </span>
                     </Link>
 
