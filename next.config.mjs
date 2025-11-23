@@ -6,6 +6,7 @@ const nextConfig = {
         unoptimized: true,
     },
     basePath: '/gsu-math-club',
+    assetPrefix: '/gsu-math-club',
     trailingSlash: true,
     experimental: {
         optimizePackageImports: ['lucide-react'],
